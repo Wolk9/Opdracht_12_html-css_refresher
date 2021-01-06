@@ -1,0 +1,113 @@
+/** Reset everything to 0 **/
+
+*,
+*::before,
+*::after {
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+.flexcontainer {
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-content: center;
+  flex: 1 1 auto;
+}
+
+.flex-item {
+  width: 380px;
+  justify-content: stretch;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+.flexcontainer h3,
+.flex-item h3 {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: normal;
+  letter-spacing: -0px;
+  margin-top: 10px;
+}
+
+statusline {
+  color: lightgray;
+  line-height: 1;
+  font-size: 18px;
+  /* letter-spacing: -1px; */
+}
+
+.flexcontainer p,
+.flex-item p {
+  font-size: 18px;
+  line-height: normal;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+button {
+  height: 10%;
+  padding: 11px 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: white;
+}
+
+.flex-item-top {
+  /* margin: 2px 5px 2px 2px; */
+  padding: 0px 0px 0px 0px;
+  margin: 20px 20px 0px 20px;
+}
+
+.flex-item-bottom {
+  /* margin: 0px 0px 0px 0px; */
+  flex-flow: row nowrap;
+  flex: 1 0 auto;
+  justify-content: stretch;
+  margin: 20px auto 20px auto;
+  padding: 20px 0px 0px 0px;
+  border-top: 0.2px solid lightgrey;
+}
+
+.approve {
+  order: 1;
+  border: 2px solid;
+  color: green;
+  border-radius: 7px 0px 0px 7px;
+  margin-right: -3px;
+}
+
+.approve:hover {
+    color:white;
+    background-color: green;
+    border: 2px solid green;
+}
+
+.decline:hover {
+    color: white;
+    background-color: red;
+    border: 2px solid red; 
+}
+
+.decline {
+    order: 2;
+  border: 2px solid;
+  color: red;
+  border-radius: 0px 7px 7px 0px;
+  margin-left: -3px;
+}
+
+.approve,
+.decline {
+  width: 45%; 
+  margin-bottom: 5px;
+}
