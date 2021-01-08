@@ -21,9 +21,10 @@
 }
 
 .flex-item {
-  display: flex;
+  /* display: flex;
   flex-flow: column wrap;
-  align-content: flex-start;
+  align-content: flex-start; */
+  line
   width: 380px;
   border: 1px solid lightgray;
   border-radius: 7px;
