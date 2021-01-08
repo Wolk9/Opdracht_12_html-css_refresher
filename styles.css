@@ -7,64 +7,38 @@
   box-sizing: border-box;
 }
 
+/* Declare Global settings */
 * {
   font-family: "Lato", sans-serif;
   letter-spacing: -0.2pt;
 }
 
+/* Setting up Flex containers and Items */
+
 .flexcontainer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  /* align-content: center; */
   flex: 1 1 auto;
 }
 
 .flex-item {
-  /* display: flex;
-  flex-flow: column wrap;
-  align-content: flex-start; */
-  line
   width: 380px;
   border: 1px solid lightgray;
   border-radius: 7px;
   margin: 0px 7px;
 }
 
-.flexcontainer h3,
-.flex-item h3 {
-  font-weight: 700;
-  font-size: 23px;
-  padding: 0px;
-  /* margin-top: 10px; */
-}
+/* Devide an item in a top an bottom part */
 
-.flex-item .status {
-  color: #a1a1a1;
-}
-
-.flexcontainer p,
-.flex-item p {
-  font-size: 18px;
-  color: #444444;
-  line-height: normal;
-}
-
-button {
-  height: 10%;
-  padding: 8px 0px;
-  font-size: 18px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: white;
-}
+/* Top for the information */
 
 .flex-item-top {
-  /* margin: 2px 5px 2px 2px; */
-  padding: 0px 0px 0px 0px;
+  padding: 0px 0px 10px 0px;
   margin: 20px 20px 0px 20px;
 }
+
+/* Bottom for the buttons */
 
 .flex-item-bottom {
   /* margin: 0px 0px 0px 0px; */
@@ -74,9 +48,53 @@ button {
   justify-content: center;
   align-content: center;
   margin: 0% 0% 0% 0%;
-  padding: 8% 8% 8% 8%;
+  padding: 5% 5% 5% 5%;
   border-top: 0.2px solid lightgrey;
 }
+
+/* declare H3 P and .status selectors within Flex-items-top */
+
+.flex-item-top h3 {
+  margin-top: 0px;
+  margin-bottom: 3px;
+  font-weight: 700;
+  font-size: 23px;
+  padding: 0px;
+}
+
+.flex-item-top .status {
+  color: #a1a1a1;
+  margin-top: 0px;
+  font-size: 18px;
+}
+
+.flexcontainer p,
+.flex-item p {
+  font-size: 19px;
+  color: #444444;
+  line-height: normal;
+}
+
+/* Style the avatar on the info part  */
+
+.avatar {
+  float: right;
+  vertical-align: top;
+  width: 44px;
+}
+
+/* Design the Buttons */
+
+button {
+  padding: 8px 0px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+/* The green approve button  */
 
 .approve {
   order: 1;
@@ -92,11 +110,7 @@ button {
   border: 2px solid rgb(0, 189, 0);
 }
 
-.decline:hover {
-  color: white;
-  background-color: red;
-  border: 2px solid red;
-}
+/* The red decline button  */
 
 .decline {
   order: 2;
@@ -105,6 +119,14 @@ button {
   border-radius: 0px 6px 6px 0px;
   margin-left: -3px;
 }
+
+.decline:hover {
+  color: white;
+  background-color: red;
+  border: 2px solid red;
+}
+
+/* Settings for both buttons  */
 
 .approve,
 .decline {
